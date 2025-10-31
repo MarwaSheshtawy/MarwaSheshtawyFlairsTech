@@ -1,0 +1,9 @@
+{
+  "candidate": {
+    "firstName": "Auto",
+    "lastName": "Candidate",
+    "emailPrefix": "auto.candidate+",
+    "emailDomain": "@example.com",
+    "notes": "Created by Cypress API test"
+  }
+}

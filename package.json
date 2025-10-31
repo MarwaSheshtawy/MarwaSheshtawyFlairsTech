@@ -1,0 +1,34 @@
+{
+  "name": "marwasheshtawyflairstech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "cypress:open": "cypress open",
+  "test:headless": "cypress run --browser chrome",
+  "report:merge": "npx mochawesome-merge reports/mochawesome/*.json > reports/mochawesome/merged.json",
+  "report:html": "npx marge reports/mochawesome/merged.json -o reports/mochawesome --inline",
+  "report:all": "npm run test:headless && npm run report:merge && npm run report:html"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarwaSheshtawy/MarwaSheshtawyFlairsTech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarwaSheshtawy/MarwaSheshtawyFlairsTech/issues"
+  },
+  "homepage": "https://github.com/MarwaSheshtawy/MarwaSheshtawyFlairsTech#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
+    "cypress": "^15.5.0",
+    "esbuild": "^0.25.11",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0"
+  }
+}

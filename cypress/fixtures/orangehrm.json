@@ -1,0 +1,11 @@
+{
+  "appUrl": "https://opensource-demo.orangehrmlive.com",
+  "adminUsersPageLabel": "System Users",
+  "addUser": {
+    "role": "ESS",
+    "status": "Enabled",
+    "employeeName": "Paul Collings",
+    "usernamePrefix": "auto_user_",
+    "password": "Auto!2345"
+  }
+}
