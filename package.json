@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
 "scripts": {
-  "cypress:open": "cypress open",
-  "test:headless": "cypress run --browser chrome",
-  "report:merge": "npx mochawesome-merge reports/mochawesome/*.json > reports/mochawesome/merged.json",
-  "report:html": "npx marge reports/mochawesome/merged.json -o reports/mochawesome --inline",
-  "report:all": "npm run test:headless && npm run report:merge && npm run report:html"
+    "start:web": "php -S 0.0.0.0:8080 -t public", 
+    "cy:run": "cypress run --config baseUrl=http://localhost:8080",
+    "test:e2e": "start-server-and-test start:web http://localhost:8080 cy:run"
 },
   "repository": {
     "type": "git",
